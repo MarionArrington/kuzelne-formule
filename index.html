@@ -10,7 +10,6 @@
             margin: 0;
             padding: 0;
             min-height: 100vh;
-            font-size: 14px; /* Zmenšená základná veľkosť textu pre celú stránku */
         }
 
         /* Plynulý prechod farieb pri prepínaní režimov Lumos / Nox */
@@ -21,8 +20,8 @@
 </head>
 <body id="page-body" style="background-color: #23120c; color: #d8b37e; font-family: sans-serif; margin: 0; padding: 20px;">
 
-<!-- Hlavný obal pre vycentrovanie, šírka 720px, pozadie #23120c, text #d8b37e -->
-<div id="content-container" style="max-width: 720px; margin: 0 auto; background-color: #23120c; color: #d8b37e; padding: 25px; border-radius: 8px;">
+<!-- Hlavný obal pre vycentrovanie, šírka zväčšená na 960px, pozadie #23120c, text #d8b37e -->
+<div id="content-container" style="max-width: 960px; margin: 0 auto; background-color: #23120c; color: #d8b37e; padding: 25px; border-radius: 8px;">
 
 <div style="cursor: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2232%22 height=%2232%22 viewBox=%220 0 24 24%22><path fill=%22%236f4e37%22 d=%22M13 2l-2 2 8 8-2 2 4 4 1-1-4-4 2-2z%22/><path fill=%22%23ffd700%22 d=%22M19 1l2 2-2 2-2-2z%22/></svg>') 16 16, auto;">
 
@@ -49,7 +48,7 @@
 </div>
 
 <p style="margin-bottom: 8px; text-align: justify;">
-    <font color="#2ccaea"><b><u>Obecné zásady efektívneho používania kúziel</u></b></font><br><br>
+    <font color="#2ccaea"><b><big><u>Obecné zásady efektívneho používania kúziel</u></big></b></font><br><br>
     Každý jedinec, ktorý v sebe objaví kúzelnícke nadanie, by sa ho mal naučiť správne využívať. Starostolec preto zostavil súbor obecných pravidiel, ktoré napomáhajú mladým čarodejníkom pri nácviku kúziel.
 </p>
 
@@ -78,7 +77,7 @@
 <!-- LUMOS -->
 <p style="margin-bottom: 1.2em; text-align: justify;">
     <font color="#2ccaea">
-        <b><u><span style="font-size: 1.15em; font-weight: bold; cursor: pointer;" onclick="turnLumosOn()">LUMOS</span></u></b>
+        <b><u><big style="color: #2ccaea; cursor: pointer;" onclick="turnLumosOn()">LUMOS</big></u></b>
     </font><br> 
     Kúzlo, ktoré <font color="#2ccaea">rozsvieti hrot</font> zosielateľovho <font color="#2ccaea">prútika,</font> umožňuje vidieť v tme. Ihneď po zoslaní dokáže nielen osvetliť okolie čarodejníka, ktorý kúzlo použil, ale i odhaliť neviditeľné priestory, ktoré sa pred ním nachádzajú. Okrem toho je schopné odháňať duchov a stvorenia citlivé na svetlo (Gytrash). Napriek tomu, že sa jedná o veľmi jednoduché kúzlo, vyžaduje si v začiatkoch zvýšenú pozornosť and sústredenie. Pozor, svetlo ktoré prútik vydáva je mierne teplé a môže spôsobiť vznietenie horľavých materiálov, niekedy dokonca samotného prútika, ak je zasielateľ nepozorný.
 </p>
@@ -95,7 +94,7 @@
 <p style="margin-bottom: 1.2em; text-align: justify;">
     <b>
         <font color="#2ccaea">
-            <u><span style="font-size: 1.15em; font-weight: bold; cursor: pointer;" onclick="turnNoxOn()">NOX</span></u>
+            <u><big style="color: #2ccaea; cursor: pointer;" onclick="turnNoxOn()">NOX</big></u>
         </font>
     </b><br> 
     Protikúzlo kúzla Lumos – dokáže <font color="#2ccaea">zhasnúť rozsvietený hrot prútika.</font> Kúzlo je spájané s gréckou bohyňou Nyx, považovanou za samotnú noc. Po jeho použití začne svetlo na konci prútika postupne slabnúť, až zmizne úplne.
