@@ -1,0 +1,240 @@
+<style>
+    /* 1. Oprava kurzora na prútik */
+    html, body {
+        cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="%236f4e37" d="M13 2l-2 2 8 8-2 2 4 4 1-1-4-4 2-2z"/><path fill="%23ffd700" d="M19 1l2 2-2 2-2-2z"/></svg>') 16 16, auto !important;
+    }
+
+    /* 2. Štýl pre Definíciu mágie (éterický box) */
+    .poucka-magia {
+        background: rgba(44, 202, 234, 0.03);
+        border: 1px solid rgba(44, 202, 234, 0.4);
+        border-left: 4px solid #2ccaea;
+        padding: 25px;
+        margin: 20px 0;
+        border-radius: 4px;
+        text-align: justify;
+    }
+
+    /* 3. Štýl pre 4 Obecné zásady (2 stĺpce) */
+    .zasady-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        margin: 20px 0;
+    }
+    .zasada-karta {
+        background: rgba(44, 202, 234, 0.05);
+        border: 1px solid rgba(44, 202, 234, 0.3);
+        border-left: 4px solid #2ccaea;
+        padding: 15px;
+        border-radius: 4px;
+        transition: all 0.4s ease;
+    }
+    .zasada-karta:hover {
+        background: rgba(44, 202, 234, 0.12);
+        transform: translateY(-2px);
+    }
+
+    /* 4. Štýl pre otáčanie obrázkov */
+    .spell-card-container {
+        perspective: 1000px;
+        display: inline-block;
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+    .spell-card {
+        transition: transform 0.8s ease-in-out;
+        transform-style: preserve-3d;
+        border-radius: 10px;
+    }
+    .spell-card-container:hover .spell-card {
+        transform: rotateY(360deg);
+    }
+
+    /* 5. Focus Mode */
+    body { transition: background-color 0.8s ease, color 0.8s ease; }
+    body.nox-mode { background-color: #0c0c12 !important; color: #b0b0b0 !important; }
+    body.lumos-mode { background-color: #fefcf5 !important; color: #1a1a1a !important; }
+    .clickable-spell { cursor: pointer; }
+</style>
+
+<center><img src=https://i.ibb.co/vwps100/zkv.png width=80%></center> 
+   
+ <p style="text-align: justify">Každý 
+ mladý čarodejník či čarodejnica by mali mať <font 
+ color="#2ccaea">všeobecný prehľad z najdôležitejších kúzelníckych 
+ odvetví,</font> ktorý im Bradavická škola poskytuje v prvom roku štúdia 
+ prostredníctvom predmetu ZKV, z dôvodu následnej profilácie vzdelania vybraným 
+ smerom. Počas hodín Základov kúzelníckeho vzdelania študenti nadobúdajú kľúčové 
+ poznatky z nasledujúcich oblastí:</p> 
+   
+ <center><iframe width="320" 
+ height="215" src="https://www.youtube.com/embed/80LDbHor92I?start=3" 
+ title="YouTube video player" frameborder="0" 
+ allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+ gyroscope; picture-in-picture" allowfullscreen></iframe></center> 
+   
+
+   
+ <center><font 
+ color="#2ccaea">____________________________________________________________</font></center><br> 
+   
+   
+ <center><img 
+ src=https://i.ibb.co/CtPkWnd/KF.png width=65%></center> 
+ <p style="text-align: justify">Podľa 
+ všeobecnej mienky obsahujú hodiny Kúzelných formúl tie <font 
+ color="#2ccaea">najdôležitejšie a najužitočnejšie kúzla, ktoré sú 
+ základom pre výuku ďalších kúzelnických predmetov.</font> Študenti sú 
+ vedení k osvojeniu si správnej <font 
+ color="#2ccaea">inkantácie</font> a <font 
+ color="#2ccaea">výslovnosti kúziel,</font> ktoré sú 
+ nevyhnutné pre ich úspešné zoslanie. Nesprávne zvládnutá technika môže viesť 
+ nielen k neefektívnemu výsledku, ale i k závažným úrazom. Rovnako 
+ podstatné je poznať účinok preberaných kúziel a možnosti ich 
+ využitia.<br><br> 
+   
+ Vlastniť prútik, ovládať správnu výslovnosť a inkantáciu 
+ (pohyb prútika) však pre úspešné zvládnutie kúzla nestačí, zosielateľ musí mať 
+ schopnosť korigovať a vedome ovládať mágiu. Táto schopnosť je dedičná, hoci v 
+ niektorých prípadoch môže pokojne preskočiť niekoľko generácii. Prvé prejavy 
+ mágie sa u čarodejníkov objavujú v rozdielnom veku - dôležitým činiteľom je <font 
+ color="#2ccaea">mentálna zrelosť jedinca a rozsah jeho vrodeného 
+ nadania.</font> To však treba rozvíjať. Ak jedinec rozvoj zdedených 
+ schopností zanedbá, nikdy nedosiahne plného potenciálu a nevyrovná sa 
+ čarodejníkovi, ktorý síce dostal do vienka menšie nadanie, no celý život tvrdo 
+ pracoval na jeho rozvoji.<br><br> 
+   
+ Počas výkladov sa viackrát stretnete s pojmom 
+ mágia. Čo vlastne mágia je? Ako by sme ju charakterizovali? V rámci kúzliacich 
+ predmetov sa uvádza nasledujúca definícia:</p>
+
+ <div class="poucka-magia">
+    <font color="#2ccaea"><b>Definícia mágie:</b></font><br>
+    <i>“Mágia je nadprirodzená sila, ktorá môže zmeniť štruktúru reality na základných úrovniach.“</i>
+ </div><br>
+   
+   
+ <p style="text-align: 
+ justify"><font 
+ color="#2ccaea"><b><big><u>Obecné zásady 
+ efektívneho používania 
+ kúziel</font></b></big></u><br><br> 
+   
+ Každý jedinec, ktorý v sebe objaví kúzelnícke nadanie, 
+ by sa ho mal naučiť správne využívať. Starostolec preto zostavil súbor obecných 
+ pravidiel, ktoré napomáhajú mladým čarodejníkom pri nácviku kúziel.<br></p>
+
+ <div class="zasady-grid">
+    <div class="zasada-karta"><b><font color="#2ccaea">Uvoľňujúce cvičenie</font></b><br>Ide o cviky určené na uvoľnenie stuhnutého zápästia. V prípade osôb so zníženou schopnosťou koncentrácie sa odporúča rozhýbať celé telo.</div>
+    <div class="zasada-karta"><b><font color="#2ccaea">Artikulácia</font></b><br>Precízna výslovnosť formule je nevyhnutná pre úspešné zoslanie kúzla, preto je vhodné rozhýbať nielen zápästie, ale aj jazyk (napr. jazykolamy).</div>
+    <div class="zasada-karta"><b><font color="#2ccaea">Mnemotechnické pomôcky</font></b><br>Vzhľadom na značné množstvo kúziel v priebehu ročníkov je vhodné používať mnemotechnické pomôcky na zapamätanie presného znenia.</div>
+    <div class="zasada-karta"><b><font color="#2ccaea">Cvičenie robí majstra</font></b><br>Úspech si vyžaduje vytrvalosť, a preto ak chcete byť dobrými kúzelníkmi, nevyhnete sa pravidelnému tréningu.</div>
+ </div>
+
+ <p style="text-align: justify">Okrem teórie sa dnes budeme venovať aj praxi, 
+ konkrétne dvom jednoduchým no napriek tomu nesmierne užitočným kúzlam. 
+ </p><br> 
+    
+ <p style="text-align: 
+ justify"><font color="#2ccaea"><b><u><big>LUMOS</big></u></b></font><br><br> 
+   
+   
+ Kúzlo, ktoré <font 
+ color="#2ccaea">rozsvieti hrot</font> zosielateľovho 
+ <font color="#2ccaea">prútika,</font> umožňuje vidieť v 
+ tme. Ihneď po zoslaní dokáže nielen osvetliť okolie čarodejníka, ktorý kúzlo 
+ použil, ale i odhaliť neviditeľné priestory, ktoré sa pred ním nachádzajú. 
+ Okrem toho je schopné odháňať duchov a stvorenia citlivé na svetlo (Gytrash). 
+ Napriek tomu, že sa jedná o veľmi jednoduché kúzlo, vyžaduje si 
+ v začiatkoch zvýšenú pozornosť and sústredenie. Pozor, svetlo ktoré prútik 
+ vydáva je mierne teplé a môže spôsobiť vznietenie horľavých materiálov, 
+ niekedy dokonca samotného prútika, ak je zasielateľ nepozorný.<br>   
+   
+ <IMG BORDER="0" SRC=" 
+ https://i.ibb.co/FbMrfFd/lumos-k-zlo.gif" ALT="lumos" 
+ WIDTH="220" HEIGHT="290" 
+ ALIGN="left"><br>Napriek jednoduchosti nebolo toto kúzlo 
+ vynájdené až do 18. storočia. Po prvýkrát ho použila, <font 
+ color="#2ccaea">v roku 1772,</font> jeho vynálezkyňa, 
+ <font color="#2ccaea">Levina Monkstanley,</font> 
+ nedoknuteľná na Odbore záhad spadajúcom pod britské Ministerstvo mágie, v snahe 
+ nájsť pomocou neho spadnuté brko v slabo osvetlenej miestnosti. Hoci nemecký 
+ čarodejník Garvin Lügner prehlasoval, že kúzlo vynašiel on,  pri práci na zatemňovacom prášku. Ten mal byť 
+ schopný zhasnúť akékoľvek svetlo na svete. Po jeho smrti však bolo dokázané, že 
+ nielenže nemal žiadny podiel na vynáleze kúzla Lumos, ale ani jeho zatemňovací 
+ prášok nepracoval tak, ako by mal.</p><br> 
+   
+   
+   
+   
+ <p style="text-align: 
+ justify"><b><font 
+ color="#2ccaea"><u><big>NOX</b></font></u></big><br><br> 
+   
+   
+ Protikúzlo kúzla Lumos – dokáže <font 
+ color="#2ccaea">zhasnúť rozsvietený hrot prútika. 
+ </font>  Kúzlo je spájané s gréckou 
+ bohyňou Nyx, považovanou za samotnú noc. Po jeho použití začne svetlo na konci 
+ prútika postupne slabnúť, až zmizne úplne.<br> 
+   
+   
+ <IMG BORDER="0" SRC="https://i.ibb.co/stnTqFg/nox-k-zlo.gif "ALT="nox" 
+ WIDTH="220" HEIGHT="290" 
+ ALIGN="left"><br>Rovnako ako kúzlo Lumos, i jeho protikúzlo 
+ bolo vynájdené <font color="#2ccaea">Levinou Monkstanley. 
+ </font>Potom čo sa Levine podarilo hrot prútika rozsvietiť, zrazu stála 
+ pred ďalším problémom – ako ho zhasnúť. Dlhé hodiny skúšala rôzne pohyby 
+ prútikom, ku ktorým pridávala slová súvisiace so zhasínam, avšak zbytočne, 
+ svetlo zhasnúť nedokázala. Keď bola pripravená svoju snahu vzdať, poslednýkrát 
+ zúfalo mávla a vyslovila latinské slovíčko nox - noc. K jej veľkému prekvapeniu 
+ si na konto mohla pripísať vynález druhého kúzla v danom roku. </p><br><br><br> 
+   
+ <div 
+ align="right"><img src= https://i.ibb.co/tPtxVkk/pppp.png width=13%></div>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // 1. Obalenie GIFov
+    const gifImages = document.querySelectorAll('img[src*="k-zlo.gif"]');
+    gifImages.forEach(img => {
+        const container = document.createElement('div');
+        container.className = 'spell-card-container';
+        if (img.align === "left") {
+            container.style.float = "left";
+            container.style.marginRight = "20px";
+        }
+        const card = document.createElement('div');
+        card.className = 'spell-card';
+        card.style.width = img.getAttribute('width') + 'px';
+        card.style.height = img.getAttribute('height') + 'px';
+        const newImg = img.cloneNode(true);
+        newImg.removeAttribute('align');
+        newImg.style.display = 'block';
+        newImg.style.width = '100%';
+        newImg.style.borderRadius = '10px';
+        card.appendChild(newImg);
+        container.appendChild(card);
+        img.parentNode.replaceChild(container, img);
+    });
+
+    // 2. Aktivácia Lumos/Nox
+    const allBigTags = document.querySelectorAll('big');
+    allBigTags.forEach(tag => {
+        const text = tag.innerText.toUpperCase();
+        if(text.includes("LUMOS") || text.includes("NOX")) {
+            tag.classList.add('clickable-spell');
+            tag.onclick = function() {
+                if(text.includes("LUMOS")) {
+                    document.body.classList.remove('nox-mode');
+                    document.body.classList.add('lumos-mode');
+                } else {
+                    document.body.classList.remove('lumos-mode');
+                    document.body.classList.add('nox-mode');
+                }
+            };
+        }
+    });
+});
+</script>
