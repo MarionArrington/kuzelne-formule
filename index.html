@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <title>Kúzelné formule</title>
     <style>
-        /* Plynulý prechod farieb pri prepínaní režimov */
-        body, #content-container {
+        /* Celkové pozadie stránky natvrdo v tmavej hnedej farbe, žiadna biela */
+        html, body {
+            background-color: #23120c !important;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+
+        /* Plynulý prechod farieb pri prepínaní režimov Lumos / Nox */
+        #content-container {
             transition: background-color 0.4s ease, color 0.4s ease;
         }
     </style>
 </head>
-<body id="page-body" style="background-color: #ffffff; color: #000000; font-family: sans-serif; margin: 0; padding: 20px;">
+<body id="page-body" style="background-color: #23120c; color: #d8b37e; font-family: sans-serif; margin: 0; padding: 20px;">
 
 <!-- Hlavný obal pre vycentrovanie, šírka 720px, pozadie #23120c, text #d8b37e -->
 <div id="content-container" style="max-width: 720px; margin: 0 auto; background-color: #23120c; color: #d8b37e; padding: 25px; border-radius: 8px;">
@@ -44,7 +52,7 @@
     Každý jedinec, ktorý v sebe objaví kúzelnícke nadanie, by sa ho mal naučiť správne využívať. Starostolec preto zostavil súbor obecných pravidiel, ktoré napomáhajú mladým čarodejníkom pri nácviku kúziel.
 </p>
 
-<!-- 4 Zásady: Orámovanie zostáva stále viditeľné, podfarbenie sa objaví až po prejdení myšou -->
+<!-- 4 Zásady: Orámovanie je stále viditeľné, podfarbenie sa rozsvieti až po prejdení myšou -->
 <table style="width: 100%; border-collapse: separate; border-spacing: 12px; margin: 0 !important;">
     <tr>
         <td style="width: 50%; background: transparent; border: 1px solid rgba(44, 202, 234, 0.6); border-left: 4px solid #2ccaea; padding: 15px; border-radius: 4px; vertical-align: top; transition: background 0.3s;" onmouseover="this.style.background='rgba(44, 202, 234, 0.2)'" onmouseout="this.style.background='transparent'">
