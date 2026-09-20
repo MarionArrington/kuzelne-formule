@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Kúzelné formule</title>
+    <style>
+        /* Plynulý prechod farieb pri prepínaní režimov */
+        body, .container-box, .rule-box {
+            transition: background-color 0.4s ease, color 0.4s ease;
+        }
+    </style>
 </head>
-<body style="background-color: #ffffff; font-family: sans-serif; margin: 0; padding: 20px;">
+<body id="page-body" style="background-color: #ffffff; color: #000000; font-family: sans-serif; margin: 0; padding: 20px;">
 
-<!-- Hlavný obal pre vycentrovanie na stred a zúženú šírku (600px) -->
-<div style="max-width: 600px; margin: 0 auto; background-color: #ffffff; padding: 20px;">
+<!-- Hlavný obal pre vycentrovanie na stred a šírku 600px -->
+<div style="max-width: 600px; margin: 0 auto; padding: 20px;">
 
 <div style="cursor: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2232%22 height=%2232%22 viewBox=%220 0 24 24%22><path fill=%22%236f4e37%22 d=%22M13 2l-2 2 8 8-2 2 4 4 1-1-4-4 2-2z%22/><path fill=%22%23ffd700%22 d=%22M19 1l2 2-2 2-2-2z%22/></svg>') 16 16, auto;">
 
@@ -32,23 +38,26 @@
 <i>“Mágia je nadprirodzená sila, ktorá môže zmeniť štruktúru reality na základných úrovniach.“</i>
 </div>
 
-<p style="margin-bottom: 8px; text-align: justify;"><font color="#2ccaea"><b><big><u>Obecné zásady efektívneho používania kúziel</u></big></b></font><br>
-Každý jedinec, ktorý v sebe objaví kúzelnícke nadanie, by sa ho mal naučiť správne využívať. Starostolec preto zostavil súbor obecných pravidiel, ktoré napomáhajú mladým čarodejníkom pri nácviku kúziel.</p>
+<p style="margin-bottom: 8px; text-align: justify;">
+    <font color="#2ccaea"><b><big><u>Obecné zásady efektívneho používania kúziel</u></big></b></font><br><br>
+    Každý jedinec, ktorý v sebe objaví kúzelnícke nadanie, by sa ho mal naučiť správne využívať. Starostolec preto zostavil súbor obecných pravidiel, ktoré napomáhajú mladým čarodejníkom pri nácviku kúziel.
+</p>
 
+<!-- 4 Zásady s modrým podfarbením pri prechode myšou -->
 <table style="width: 100%; border-collapse: separate; border-spacing: 12px; margin: 0 !important;">
     <tr>
-        <td style="width: 50%; background: rgba(44, 202, 234, 0.05); border: 1px solid rgba(44, 202, 234, 0.3); border-left: 4px solid #2ccaea; padding: 15px; border-radius: 4px; vertical-align: top;">
+        <td style="width: 50%; background: rgba(44, 202, 234, 0.05); border: 1px solid rgba(44, 202, 234, 0.3); border-left: 4px solid #2ccaea; padding: 15px; border-radius: 4px; vertical-align: top; transition: background 0.3s;" onmouseover="this.style.background='rgba(44, 202, 234, 0.25)'" onmouseout="this.style.background='rgba(44, 202, 234, 0.05)'">
             <b><font color="#2ccaea">Uvoľňujúce cvičenie</font></b><br>Ide o cviky určené na uvoľnenie stuhnutého zápästia. V prípade osôb so zníženou schopnosťou koncentrácie sa odporúča rozhýbať celé telo.
         </td>
-        <td style="width: 50%; background: rgba(44, 202, 234, 0.05); border: 1px solid rgba(44, 202, 234, 0.3); border-left: 4px solid #2ccaea; padding: 15px; border-radius: 4px; vertical-align: top;">
+        <td style="width: 50%; background: rgba(44, 202, 234, 0.05); border: 1px solid rgba(44, 202, 234, 0.3); border-left: 4px solid #2ccaea; padding: 15px; border-radius: 4px; vertical-align: top; transition: background 0.3s;" onmouseover="this.style.background='rgba(44, 202, 234, 0.25)'" onmouseout="this.style.background='rgba(44, 202, 234, 0.05)'">
             <b><font color="#2ccaea">Artikulácia</font></b><br>Precízna výslovnosť formule je nevyhnutná pre úspešné zoslanie kúzla, preto je vhodné rozhýbať nielen zápästie, ale aj jazyk (napr. jazykolamy).
         </td>
     </tr>
     <tr>
-        <td style="width: 50%; background: rgba(44, 202, 234, 0.05); border: 1px solid rgba(44, 202, 234, 0.3); border-left: 4px solid #2ccaea; padding: 15px; border-radius: 4px; vertical-align: top;">
+        <td style="width: 50%; background: rgba(44, 202, 234, 0.05); border: 1px solid rgba(44, 202, 234, 0.3); border-left: 4px solid #2ccaea; padding: 15px; border-radius: 4px; vertical-align: top; transition: background 0.3s;" onmouseover="this.style.background='rgba(44, 202, 234, 0.25)'" onmouseout="this.style.background='rgba(44, 202, 234, 0.05)'">
             <b><font color="#2ccaea">Mnemotechnické pomôcky</font></b><br>Vzhľadom na značné množstvo kúziel v priebehu ročníkov je vhodné používať mnemotechnické pomôcky na zapamätanie presného znenia.
         </td>
-        <td style="width: 50%; background: rgba(44, 202, 234, 0.05); border: 1px solid rgba(44, 202, 234, 0.3); border-left: 4px solid #2ccaea; padding: 15px; border-radius: 4px; vertical-align: top;">
+        <td style="width: 50%; background: rgba(44, 202, 234, 0.05); border: 1px solid rgba(44, 202, 234, 0.3); border-left: 4px solid #2ccaea; padding: 15px; border-radius: 4px; vertical-align: top; transition: background 0.3s;" onmouseover="this.style.background='rgba(44, 202, 234, 0.25)'" onmouseout="this.style.background='rgba(44, 202, 234, 0.05)'">
             <b><font color="#2ccaea">Cvičenie robí majstra</font></b><br>Úspech si vyžaduje vytrvalosť, a preto ak chcete byť dobrými kúzelníkmi, nevyhnete sa pravidelnému tréningu.
         </td>
     </tr>
@@ -56,9 +65,13 @@ Každý jedinec, ktorý v sebe objaví kúzelnícke nadanie, by sa ho mal nauči
 
 <p style="margin-top: 10px; margin-bottom: 1.2em; text-align: justify;">Okrem teórie sa dnes budeme venovať aj praxi, konkrétne dvom jednoduchým no napriek tomu nesmierne užitočným kúzlam.</p>
      
-<!-- LUMOS -->
-<p style="margin-bottom: 1.2em; text-align: justify;"><font color="#2ccaea"><b><u><big style="color: #ffd700; text-shadow: 0 0 10px #2ccaea;">LUMOS</big></u></b></font><br> 
-Kúzlo, ktoré <font color="#2ccaea">rozsvieti hrot</font> zosielateľovho <font color="#2ccaea">prútika,</font> umožňuje vidieť v tme. Ihneď po zoslaní dokáže nielen osvetliť okolie čarodejníka, ktorý kúzlo použil, ale i odhaliť neviditeľné priestory, ktoré sa pred ním nachádzajú. Okrem toho je schopné odháňať duchov a stvorenia citlivé na svetlo (Gytrash). Napriek tomu, že sa jedná o veľmi jednoduché kúzlo, vyžaduje si v začiatkoch zvýšenú pozornosť and sústredenie. Pozor, svetlo ktoré prútik vydáva je mierne teplé a môže spôsobiť vznietenie horľavých materiálov, niekedy dokonca samotného prútika, ak je zasielateľ nepozorný.</p>
+<!-- LUMOS (kliknutie zapne svetlý režim) -->
+<p style="margin-bottom: 1.2em; text-align: justify;">
+    <font color="#2ccaea">
+        <b><u><big style="color: #ffd700; cursor: pointer;" onclick="turnLumosOn()" title="Kliknutím rozsvietiš stránku!">LUMOS</big></u></b>
+    </font><br> 
+    Kúzlo, ktoré <font color="#2ccaea">rozsvieti hrot</font> zosielateľovho <font color="#2ccaea">prútika,</font> umožňuje vidieť v tme. Ihneď po zoslaní dokáže nielen osvetliť okolie čarodejníka, ktorý kúzlo použil, ale i odhaliť neviditeľné priestory, ktoré sa pred ním nachádzajú. Okrem toho je schopné odháňať duchov a stvorenia citlivé na svetlo (Gytrash). Napriek tomu, že sa jedná o veľmi jednoduché kúzlo, vyžaduje si v začiatkoch zvýšenú pozornosť and sústredenie. Pozor, svetlo ktoré prútik vydáva je mierne teplé a môže spôsobiť vznietenie horľavých materiálov, niekedy dokonca samotného prútika, ak je zasielateľ nepozorný.
+</p>
     
 <div style="perspective: 1000px; display: inline-block; float: left; margin-right: 20px; margin-bottom: 10px;">
     <div style="transition: transform 0.8s ease-in-out; transform-style: preserve-3d; border-radius: 10px;" onmouseover="this.style.transform='rotateY(360deg)'" onmouseout="this.style.transform='rotateY(0deg)'">
@@ -68,9 +81,15 @@ Kúzlo, ktoré <font color="#2ccaea">rozsvieti hrot</font> zosielateľovho <font
 <p style="margin-bottom: 1.2em; text-align: justify;">Napriek jednoduchosti nebolo toto kúzlo vynájdené až do 18. storočia. Po prvýkrát ho použila, <font color="#2ccaea">v roku 1772,</font> jeho vynálezkyňa, <font color="#2ccaea">Levina Monkstanley,</font> nedoknuteľná na Odbore záhad spadajúcom pod britské Ministerstvo mágie, v snahe nájsť pomocou neho spadnuté brko v slabo osvetlenej miestnosti. Hoci nemecký čarodejník Garvin Lügner prehlasoval, že kúzlo vynašiel on, pri práci na zatemňovacom prášku. Ten mal byť schopný zhasnúť akékoľvek svetlo na svete. Po jeho smrti však bolo dokázané, že nielenže nemal žiadny podiel na vynáleze kúzla Lumos, ale ani jeho zatemňovací prášok nepracoval tak, ako by mal.</p>
 <div style="clear: both;"></div>
      
-<!-- NOX -->
-<p style="margin-bottom: 1.2em; text-align: justify;"><b><font color="#2ccaea"><u><big style="color: #ffd700; text-shadow: 0 0 10px #2ccaea;">NOX</big></u></font></b><br> 
-Protikúzlo kúzla Lumos – dokáže <font color="#2ccaea">zhasnúť rozsvietený hrot prútika.</font> Kúzlo je spájané s gréckou bohyňou Nyx, považovanou za samotnú noc. Po jeho použití začne svetlo na konci prútika postupne slabnúť, až zmizne úplne.</p>
+<!-- NOX (kliknutie zapne temný režim) -->
+<p style="margin-bottom: 1.2em; text-align: justify;">
+    <b>
+        <font color="#2ccaea">
+            <u><big style="color: #ffd700; cursor: pointer;" onclick="turnNoxOn()" title="Kliknutím zatmavíš stránku!">NOX</big></u>
+        </font>
+    </b><br> 
+    Protikúzlo kúzla Lumos – dokáže <font color="#2ccaea">zhasnúť rozsvietený hrot prútika.</font> Kúzlo je spájané s gréckou bohyňou Nyx, považovanou za samotnú noc. Po jeho použití začne svetlo na konci prútika postupne slabnúť, až zmizne úplne.
+</p>
     
 <div style="perspective: 1000px; display: inline-block; float: left; margin-right: 20px; margin-bottom: 10px;">
     <div style="transition: transform 0.8s ease-in-out; transform-style: preserve-3d; border-radius: 10px;" onmouseover="this.style.transform='rotateY(360deg)'" onmouseout="this.style.transform='rotateY(0deg)'">
@@ -84,7 +103,20 @@ Protikúzlo kúzla Lumos – dokáže <font color="#2ccaea">zhasnúť rozsvieten
 
 </div>
 
-</div>
+<!-- JavaScript pre prepínanie svetla/tmy po kliknutí na Lumos/Nox -->
+<script>
+    function turnNoxOn() {
+        const body = document.getElementById('page-body');
+        body.style.backgroundColor = '#121212';
+        body.style.color = '#e0e0e0';
+    }
+
+    function turnLumosOn() {
+        const body = document.getElementById('page-body');
+        body.style.backgroundColor = '#ffffff';
+        body.style.color = '#000000';
+    }
+</script>
 
 </body>
 </html>
