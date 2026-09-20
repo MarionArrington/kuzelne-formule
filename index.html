@@ -10,10 +10,10 @@
         }
     </style>
 </head>
-<body id="page-body" style="background-color: #ffffff; color: #000000; font-family: sans-serif; margin: 0; padding: 20px;">
+<body id="page-body" style="background-color: #2596be; color: #000000; font-family: sans-serif; margin: 0; padding: 20px;">
 
-<!-- Hlavný obal pre vycentrovanie na stred a šírku 600px -->
-<div style="max-width: 600px; margin: 0 auto; padding: 20px;">
+<!-- Hlavný obal pre vycentrovanie na stred a šírku 720px -->
+<div style="max-width: 720px; margin: 0 auto; background-color: #ffffff; padding: 25px; border-radius: 8px;">
 
 <div style="cursor: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2232%22 height=%2232%22 viewBox=%220 0 24 24%22><path fill=%22%236f4e37%22 d=%22M13 2l-2 2 8 8-2 2 4 4 1-1-4-4 2-2z%22/><path fill=%22%23ffd700%22 d=%22M19 1l2 2-2 2-2-2z%22/></svg>') 16 16, auto;">
 
@@ -65,7 +65,7 @@
 
 <p style="margin-top: 10px; margin-bottom: 1.2em; text-align: justify;">Okrem teórie sa dnes budeme venovať aj praxi, konkrétne dvom jednoduchým no napriek tomu nesmierne užitočným kúzlam.</p>
      
-<!-- LUMOS (modrá farba, kliknutím zapne svetlý režim) -->
+<!-- LUMOS -->
 <p style="margin-bottom: 1.2em; text-align: justify;">
     <font color="#2ccaea">
         <b><u><big style="color: #2ccaea; cursor: pointer;" onclick="turnLumosOn()">LUMOS</big></u></b>
@@ -81,7 +81,7 @@
 <p style="margin-bottom: 1.2em; text-align: justify;">Napriek jednoduchosti nebolo toto kúzlo vynájdené až do 18. storočia. Po prvýkrát ho použila, <font color="#2ccaea">v roku 1772,</font> jeho vynálezkyňa, <font color="#2ccaea">Levina Monkstanley,</font> nedoknuteľná na Odbore záhad spadajúcom pod britské Ministerstvo mágie, v snahe nájsť pomocou neho spadnuté brko v slabo osvetlenej miestnosti. Hoci nemecký čarodejník Garvin Lügner prehlasoval, že kúzlo vynašiel on, pri práci na zatemňovacom prášku. Ten mal byť schopný zhasnúť akékoľvek svetlo na svete. Po jeho smrti však bolo dokázané, že nielenže nemal žiadny podiel na vynáleze kúzla Lumos, ale ani jeho zatemňovací prášok nepracoval tak, ako by mal.</p>
 <div style="clear: both;"></div>
      
-<!-- NOX (modrá farba, kliknutím zapne temný režim) -->
+<!-- NOX -->
 <p style="margin-bottom: 1.2em; text-align: justify;">
     <b>
         <font color="#2ccaea">
@@ -103,17 +103,23 @@
 
 </div>
 
+</div>
+
 <!-- JavaScript pre prepínanie svetla/tmy po kliknutí na Lumos/Nox -->
 <script>
     function turnNoxOn() {
         const body = document.getElementById('page-body');
+        const container = document.querySelector('div[style*="max-width"]');
         body.style.backgroundColor = '#121212';
+        container.style.backgroundColor = '#1e1e1e';
         body.style.color = '#e0e0e0';
     }
 
     function turnLumosOn() {
         const body = document.getElementById('page-body');
-        body.style.backgroundColor = '#ffffff';
+        const container = document.querySelector('div[style*="max-width"]');
+        body.style.backgroundColor = '#2596be';
+        container.style.backgroundColor = '#ffffff';
         body.style.color = '#000000';
     }
 </script>
