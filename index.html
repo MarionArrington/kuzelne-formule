@@ -5,15 +5,15 @@
     <title>Kúzelné formule</title>
     <style>
         /* Plynulý prechod farieb pri prepínaní režimov */
-        body, .container-box, .rule-box {
+        body, .container-box {
             transition: background-color 0.4s ease, color 0.4s ease;
         }
     </style>
 </head>
 <body id="page-body" style="background-color: #2596be; color: #000000; font-family: sans-serif; margin: 0; padding: 20px;">
 
-<!-- Hlavný obal pre vycentrovanie na stred a šírku 720px -->
-<div style="max-width: 720px; margin: 0 auto; background-color: #ffffff; padding: 25px; border-radius: 8px;">
+<!-- Hlavný obal pre vycentrovanie na stred, šírka 720px, pozadie #23120c a text biely/svetlý -->
+<div id="content-container" style="max-width: 720px; margin: 0 auto; background-color: #23120c; color: #e0e0e0; padding: 25px; border-radius: 8px;">
 
 <div style="cursor: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2232%22 height=%2232%22 viewBox=%220 0 24 24%22><path fill=%22%236f4e37%22 d=%22M13 2l-2 2 8 8-2 2 4 4 1-1-4-4 2-2z%22/><path fill=%22%23ffd700%22 d=%22M19 1l2 2-2 2-2-2z%22/></svg>') 16 16, auto;">
 
@@ -105,22 +105,18 @@
 
 </div>
 
-<!-- JavaScript pre prepínanie svetla/tmy po kliknutí na Lumos/Nox -->
+<!-- JavaScript pre prepínanie režimov Nox / Lumos vnútri hnedého okna -->
 <script>
     function turnNoxOn() {
-        const body = document.getElementById('page-body');
-        const container = document.querySelector('div[style*="max-width"]');
-        body.style.backgroundColor = '#121212';
-        container.style.backgroundColor = '#1e1e1e';
-        body.style.color = '#e0e0e0';
+        const container = document.getElementById('content-container');
+        container.style.backgroundColor = '#121212';
+        container.style.color = '#777777'; // Text po zhasnutí stmavne/przyšedivie
     }
 
     function turnLumosOn() {
-        const body = document.getElementById('page-body');
-        const container = document.querySelector('div[style*="max-width"]');
-        body.style.backgroundColor = '#2596be';
-        container.style.backgroundColor = '#ffffff';
-        body.style.color = '#000000';
+        const container = document.getElementById('content-container');
+        container.style.backgroundColor = '#23120c'; // Vráti sa pôvodná hnedá
+        container.style.color = '#e0e0e0'; // Text bude zase svietiť
     }
 </script>
 
